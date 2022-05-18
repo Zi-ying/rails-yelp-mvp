@@ -11,3 +11,40 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  margin: 100px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee8e8;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.div-align {
+  margin: 20px 0;
+}
+
+div {
+  margin: 20px 20px;
+}
+
+h2 {
+  color: #00829C;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: white;
+}

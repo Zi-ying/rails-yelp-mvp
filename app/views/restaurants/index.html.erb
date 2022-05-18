@@ -1,11 +1,11 @@
-<ul>
-  <% @restaurants.each do |restaurant| %>
-    <li>
-      <h2><%=  link_to restaurant.name, restaurant_path(restaurant)%></h2>
-      <p><%= restaurant.address %></p>
-      <p><%= restaurant.phone_number %></p>
-      <p><%= restaurant.category %></p>
-    </li>
-  <% end %>
-</ul>
-<%= link_to 'Create', new_restaurant_path %>
+<div class="card" style="width: 18rem;">
+ <% @restaurants.each do |restaurant| %>
+  <div class="card-body">
+      <h5 class="card-title"><%=  link_to restaurant.name, restaurant_path(restaurant)%></h5>
+      <p class="card-text"><%= restaurant.address %></p>
+      <p class="card-text"><%= restaurant.phone_number %></p>
+      <p class="card-text"><%= restaurant.category %></p>
+  </div>
+    <% end %>
+</div>
+<p class="btn btn-primary"> <%= link_to 'Create', new_restaurant_path %> </p>

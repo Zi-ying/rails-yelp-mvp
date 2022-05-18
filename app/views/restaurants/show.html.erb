@@ -4,8 +4,8 @@
 <p><%= @restaurant.category %></p>
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
-    <li class="list-group-item"><%= review.content %></li>
-    <li class="list-group-item"><%= review.rating %></li>
+    <p class="list-group-item"><%= review.content %></p>
+    <p class="list-group-item"><%= review.rating %></p>
   <% end %>
 </ul>
 
